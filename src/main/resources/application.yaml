@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: blog-app
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog_db?createDatabaseIfNotExist=true
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        auto_quote_keywords: true
+
+  sql:
+    init:
+      mode: always
+
+  data:
+    web:
+      pageable:
+        default-page-size: 10
+        one-indexed-parameters: true
+        page-parameter: page
+        size-parameter: size
+      sort:
+        sort-parameter: sort
+
