@@ -133,5 +133,4 @@ Tìm controller/method phù hợp (@GetMapping, @PostMapping...).
 Bind dữ liệu request vào tham số (@PathVariable, @RequestBody...).
 Gọi method controller.
 Nhận kết quả, convert sang HTTP response (JSON/status).
-Nếu lỗi, chuyển cho cơ chế exception handler (@ControllerAdvice, ResponseEntityExceptionHandler).#   b l o g - a p p  
- 
+Nếu lỗi, chuyển cho cơ chế exception handler (@ControllerAdvice, ResponseEntityExceptionHandler).
